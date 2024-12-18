@@ -1,17 +1,17 @@
-import './style.css'
+import './styles/style.css'
 
-let usernameInput: HTMLInputElement = document.getElementById('username') as HTMLInputElement;
-let useremailInput: HTMLInputElement = document.getElementById('useremail') as HTMLInputElement
-let userpasswordInput: HTMLInputElement = document.getElementById('userpassword') as HTMLInputElement
-let result: HTMLParagraphElement = document.getElementById('result') as HTMLParagraphElement;
-let result1: HTMLParagraphElement = document.getElementById('result1') as HTMLParagraphElement
-let result2: HTMLParagraphElement = document.getElementById('result2') as HTMLParagraphElement
-let btn: HTMLButtonElement = document.getElementById("submitBtn") as HTMLButtonElement
+import { usernameInput} from './modules/module';
+import { useremailInput } from './modules/module';
+import { userpasswordInput } from './modules/module';
+import { result } from './modules/module';
+import { result1 } from './modules/module';
+import { result2 } from './modules/module';
+import { btn } from './modules/module';
 let username: string;
 let useremail: string;
 let userpassword: string;
 
-btn.addEventListener('click', function () {
+btn.addEventListener('click', () => {
   username = usernameInput.value;
   useremail = useremailInput.value;
   userpassword = userpasswordInput.value;
@@ -22,4 +22,9 @@ btn.addEventListener('click', function () {
     result1.innerHTML = "Email: " + useremail
     result2.innerHTML = "Password: " + userpassword
   }
+  setTimeout(() => {
+    result.innerHTML = ""
+    result1.innerHTML = ""
+    result2.innerHTML = ""
+  }, 5000);
 });

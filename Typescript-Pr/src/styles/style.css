@@ -22,6 +22,10 @@ body main input {
   margin-bottom: 25px;
 }
 
+body main p {
+  margin-bottom: 25px;
+}
+
 body main button {
   background-color: green;
   padding: 20px;
