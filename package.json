@@ -1,0 +1,12 @@
+{
+  "name": "npm-ts-project",
+  "version": "1.0.0",
+  "description": "This robust but scalable repository basically implements the basics of TYPESCRIPT. It covers value-fields(DOM MANIPULATION) and modules to even simple input statements.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

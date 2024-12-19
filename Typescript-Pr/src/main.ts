@@ -8,9 +8,9 @@ import { result2 } from "./modules/module";
 import { btn } from "./modules/module";
 import { div } from "./modules/module";
 
-let username: string;
-let useremail: string;
-let userpassword: string;
+export let username: string;
+export let useremail: string;
+export let userpassword: string;
 
 btn.addEventListener("click", () => {
   username = usernameInput.value;
@@ -32,9 +32,9 @@ btn.addEventListener("click", () => {
     result.innerHTML = "";
     result1.innerHTML = "";
     result2.innerHTML = "";
-    usernameInput.value = "";
-    useremailInput.value = "";
-    userpasswordInput.value = "";
+    usernameInput.value = ""
+    useremailInput.value = ""
+    userpasswordInput.value = ""
     div.innerHTML = "";
   }, 5000);
 });
