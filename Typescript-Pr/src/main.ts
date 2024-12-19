@@ -32,6 +32,9 @@ btn.addEventListener("click", () => {
     result.innerHTML = "";
     result1.innerHTML = "";
     result2.innerHTML = "";
+    usernameInput.value = "";
+    useremailInput.value = "";
+    userpasswordInput.value = "";
     div.innerHTML = "";
   }, 5000);
 });
