@@ -16,7 +16,7 @@ export const runHTMLNodeBasis = () => {
     let pigLatinWord = input.value;
     let processedWord_f = pigLatinWord[0];
     let processedWordr = pigLatinWord.slice(1, pigLatinWord.length);
-    let processedWord = processedWordr + processedWord_f.toLowerCase();
+    let processedWord = processedWordr + processedWord_f.trim().toLowerCase();
     header.innerHTML = processedWord;
 
     div3?.appendChild(header);

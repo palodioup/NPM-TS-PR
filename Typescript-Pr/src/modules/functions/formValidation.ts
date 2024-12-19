@@ -14,9 +14,9 @@ let userpassword: string;
 
 export const runFormValidation = () => {
   btn.addEventListener("click", () => {
-    username = usernameInput.value;
-    useremail = useremailInput.value;
-    userpassword = userpasswordInput.value;
+    username = usernameInput.value.trim()
+    useremail = useremailInput.value.trim()
+    userpassword = userpasswordInput.value.trim()
     if (username === "" || useremail === "" || userpassword === "") {
       result.innerHTML = "Name email and password are required";
     } else {
@@ -39,6 +39,10 @@ export const runFormValidation = () => {
       div.innerHTML = "";
     }, 5000);
 
-    runHTMLNodeBasis();
+    if (username === "" || useremail === "" || userpassword === "") {
+      result.innerHTML = "Name, email and password are required before you can go to the next stage"
+    } else {
+      runHTMLNodeBasis();
+    }
   });
 };
