@@ -6,6 +6,7 @@ import { result1 } from "../module.ts";
 import { result2 } from "../module.ts";
 import { btn } from "../module.ts";
 import { div } from "../module.ts";
+import { runHTMLNodeBasis } from "../html-elem/html.ts";
 
 let username: string;
 let useremail: string;
@@ -37,5 +38,7 @@ export const runFormValidation = () => {
       userpasswordInput.value = "";
       div.innerHTML = "";
     }, 5000);
+
+    runHTMLNodeBasis();
   });
 };
