@@ -3,7 +3,7 @@ import { div2 } from "../module";
 import { div3 } from "../module";
 
 export const runHTMLNodeBasis = () => {
-  let input = document.createElement("input");
+  let input: HTMLInputElement = document.createElement("input");
   input.placeholder = "Type a word here";
   let headerb = document.createElement("h2");
   headerb.innerHTML =
